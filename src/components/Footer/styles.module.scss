@@ -1,0 +1,50 @@
+.footerContainer {
+    height: 10rem;
+    width: 100%;
+    padding: 6rem 0;
+    background: var(--gray-100);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    div.socialMedia {
+        display: flex;
+        flex-direction: row;
+
+        svg {
+            margin-right: 0.5rem;
+        }
+
+        div {
+            display: flex;
+            
+            div {
+                display: flex;
+                flex-direction: row;
+            }
+        }
+    }
+
+    div {
+        display: flex;
+        flex-direction: column;
+
+        strong {
+            margin-bottom: 0.25rem;
+        }
+
+        a {
+            text-decoration: underline;
+
+            & + a {
+                margin-top: 0.25rem;
+            }
+
+            &:hover {
+                color: var(--gray-300);
+                text-decoration: none;
+            }
+        }
+    }
+}

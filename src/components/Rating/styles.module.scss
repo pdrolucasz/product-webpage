@@ -1,0 +1,20 @@
+.container {
+    button {
+        background: transparent;
+        border: 0;
+        
+        svg {
+            color: var(--gray-300);
+
+            &:hover {
+                color: var(--purple-500);
+            }
+        }
+
+        &.active {
+            svg {
+                color: var(--purple-500);
+            }
+        }
+    }
+}
