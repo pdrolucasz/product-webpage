@@ -1,0 +1,133 @@
+.container {
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    width: 1120px;
+    margin: 4rem auto 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    p {
+        display: flex;
+        align-items: center;
+        margin-bottom: 2rem;
+
+        a:last-child {
+            text-decoration: underline;
+        }
+    }
+
+    div.otherProducts {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+
+        h2 {
+            align-self: center;
+            margin-bottom: 1.5rem;
+        }
+
+        ul {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(250px, 1fr));
+            gap: 1rem;
+            list-style: none;
+
+            li {
+                background: var(--gray-100);
+                border: 3px solid var(--gray-300);
+                
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 25rem;
+
+                img {
+                    height: 15rem;
+                }
+            }
+        }
+    }
+
+    div.community {
+        margin-top: 5rem;
+
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+
+        h2 {
+            align-self: center;
+            margin-bottom: 1.5rem;
+        }
+
+        ul {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 1rem;
+            list-style: none;
+
+            li {
+                width: 10rem;
+                height: 10rem;
+
+                background: var(--gray-100);
+                border: 3px solid var(--gray-300);
+                
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+
+    div.newsletter {
+        margin: 3rem 0;
+
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        div {
+            margin-top: 1rem;
+            input {
+                border-radius: 0.25rem;
+                border: 2px solid var(--purple-500);
+
+                padding: 0.7rem;
+
+                transition: all 0.2s;
+
+                &:focus {
+                    box-shadow: 0 0 10px var(--purple-500);
+                }
+            }
+
+            button {
+                background: var(--purple-500);
+                color: var(--white);
+                border: 0;
+                border-radius: 0.25rem;
+
+                margin-left: 1rem;
+
+                padding: 0.7rem 1rem;
+                transition: all 0.2s;
+                
+
+                &:hover {
+                    box-shadow: 0 0 10px var(--purple-500);
+                }
+            }
+        }
+
+    }
+}
