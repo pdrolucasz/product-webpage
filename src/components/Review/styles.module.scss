@@ -5,9 +5,10 @@
     background: var(--gray-100);
 
     width: 22rem;
-    height: 6.25rem;
+    height: 8rem;
+    padding: 1rem;
     
-    svg {
+    > svg {
         width: 100%;
     }
 

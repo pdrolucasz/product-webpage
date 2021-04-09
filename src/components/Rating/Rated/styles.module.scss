@@ -1,0 +1,9 @@
+.container {
+    svg {
+        color: var(--gray-300);
+
+        &.active {
+            color: var(--purple-500);
+        }
+    }
+}
